@@ -55,9 +55,9 @@ This is a step by step process to get this code running:
 
 **Useful Links**
 
-[DeepLearning](http://deeplearning4j.org)
+[deeplearning4j.org](http://deeplearning4j.org)
 
-[DeepLearning](https://github.com/deeplearning4j/deeplearning4j)
+[deepearning4j library repository](https://github.com/deeplearning4j/deeplearning4j)
 
-[DeepLearning](https://github.com/deeplearning4j/dl4j-examples)
+[deeplearning4j examples repository](https://github.com/deeplearning4j/dl4j-examples)
 
