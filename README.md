@@ -2,12 +2,12 @@
 This is a UI test for trained model in DeepLearning4J Library.
 
 ## GETTING STARTED
-Assuming at least Java JDK 1.8 is installed already and you cloned or downloaded this reposority.
+Assuming at least Java JDK 1.8 and JavaFX Library are installed already and you cloned or downloaded this repository.
 
 ## Prerequisites
 This is a step by step process to get this code running:
 
-**First step.** Install VLC but this is optional if libavcodec.so is compatible with the version of Linux or Ubuntu machine and JavaFX Library. If not then go through this steps:
+**First step.** Install VLC but this is optional if *libavcodec.so* is compatible with the version of Linux or Ubuntu machine and JavaFX Library. If not then go through this steps:
   > sudo aptitude
   
   > then search for vlc and install
@@ -36,8 +36,17 @@ This is a step by step process to get this code running:
 
 ## Graphical sample of how to use the program
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_001.png)
+
+*You can choose a model from specific directory by clicking the button with folder icon at the left top corner or use the pretrained model from darknet*
+
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_002.png)
+
+*Load your `Validation` or `Test` dataset*
+
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_003.png)
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_004.png)
+
+*Click one picture or video you want your model to start testing object detection*
+
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_005.png)
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_006.png)
