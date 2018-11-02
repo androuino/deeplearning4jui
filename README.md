@@ -1,5 +1,7 @@
 # deeplearning4jui
 This is a UI test for trained model in DeepLearning4J Library.
+Some part of my code and images or videos were from this [link](https://github.com/PacktPublishing/Java-Machine-Learning-for-Computer-Vision) so if you want to
+get more knowledge about DeepLearning, you may want to check on this repo.
 
 ## GETTING STARTED
 Assuming at least Java JDK 1.8 and JavaFX Library are installed already and you cloned or downloaded this repository.
@@ -50,3 +52,9 @@ This is a step by step process to get this code running:
 
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_005.png)
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_006.png)
+
+**Useful Links**
+[DeepLearning](http://deeplearning4j.org)
+[DeepLearning](https://github.com/deeplearning4j/deeplearning4j)
+[DeepLearning](https://github.com/deeplearning4j/dl4j-examples)
+
