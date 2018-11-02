@@ -35,3 +35,9 @@ This is a step by step process to get this code running:
 **Fourth step.** Modify the `LocalData.java` and put your customized classes if you have one.
 
 ## Graphical sample of how to use the program
+![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_001.png)
+![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_002.png)
+![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_003.png)
+![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_004.png)
+![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_005.png)
+![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_006.png)
