@@ -109,7 +109,7 @@
           <entry key="gitignore" value="147" />
           <entry key="gradle" value="87" />
           <entry key="java" value="13433" />
-          <entry key="md" value="812" />
+          <entry key="md" value="822" />
           <entry key="properties" value="49" />
           <entry key="txt" value="82" />
           <entry key="xml" value="283" />
@@ -120,7 +120,7 @@
           <entry key="CSS" value="268" />
           <entry key="Groovy" value="87" />
           <entry key="JAVA" value="13433" />
-          <entry key="PLAIN_TEXT" value="1122" />
+          <entry key="PLAIN_TEXT" value="1132" />
           <entry key="Properties" value="49" />
           <entry key="XML" value="322" />
         </counts>
@@ -182,8 +182,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+                <state relative-caret-position="406">
+                  <caret line="41" column="153" selection-start-line="41" selection-start-column="153" selection-end-line="41" selection-end-column="153" />
                 </state>
               </provider>
             </entry>
@@ -693,7 +693,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541151379770" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541151505876" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1006,7 +1006,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541151318493</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="cleanup">
+      <created>1541151387151</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1541151387151</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1439,8 +1446,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="406">
+          <caret line="41" column="153" selection-start-line="41" selection-start-column="153" selection-end-line="41" selection-end-column="153" />
         </state>
       </provider>
     </entry>

@@ -2,12 +2,19 @@
   <dictionary name="sem">
     <words>
       <w>bridgestone</w>
+      <w>bytedeco</w>
+      <w>caprica</w>
+      <w>datavec</w>
       <w>deeplearning</w>
       <w>deeplearningui</w>
       <w>diningtable</w>
       <w>dunlop</w>
+      <w>ffmpeg</w>
       <w>inferenc</w>
+      <w>javacpp</w>
       <w>objs</w>
+      <w>pretrained</w>
+      <w>vlcj</w>
       <w>yojkohama</w>
       <w>yolo</w>
     </words>
