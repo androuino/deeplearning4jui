@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d9dfdc-6b56-439b-bdf4-bf9da092c816" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_006.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -111,7 +106,7 @@
           <entry key="css" value="268" />
           <entry key="dummy" value="81" />
           <entry key="fxml" value="39" />
-          <entry key="gitignore" value="30" />
+          <entry key="gitignore" value="116" />
           <entry key="gradle" value="87" />
           <entry key="java" value="13433" />
           <entry key="md" value="724" />
@@ -125,7 +120,7 @@
           <entry key="CSS" value="268" />
           <entry key="Groovy" value="87" />
           <entry key="JAVA" value="13433" />
-          <entry key="PLAIN_TEXT" value="910" />
+          <entry key="PLAIN_TEXT" value="996" />
           <entry key="Properties" value="49" />
           <entry key="XML" value="322" />
         </counts>
@@ -196,8 +191,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="17" selection-start-column="17" selection-end-column="17" />
+                <state relative-caret-position="28">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
                 </state>
               </provider>
             </entry>
@@ -686,6 +681,17 @@
             </path>
             <path>
               <item name="deeplearningui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deeplearningui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deeplearningui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deeplearningui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deeplearningui" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -696,7 +702,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541149413146" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541150367773" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1427,8 +1433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        <state relative-caret-position="28">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
