@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="67d9dfdc-6b56-439b-bdf4-bf9da092c816" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlui.log" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -106,11 +106,12 @@
           <entry key="css" value="268" />
           <entry key="dummy" value="81" />
           <entry key="fxml" value="39" />
+          <entry key="gitignore" value="8" />
           <entry key="gradle" value="87" />
           <entry key="java" value="13433" />
           <entry key="md" value="724" />
           <entry key="properties" value="49" />
-          <entry key="txt" value="37" />
+          <entry key="txt" value="59" />
           <entry key="xml" value="283" />
         </counts>
       </usages-collector>
@@ -119,7 +120,7 @@
           <entry key="CSS" value="268" />
           <entry key="Groovy" value="87" />
           <entry key="JAVA" value="13433" />
-          <entry key="PLAIN_TEXT" value="842" />
+          <entry key="PLAIN_TEXT" value="872" />
           <entry key="Properties" value="49" />
           <entry key="XML" value="322" />
         </counts>
@@ -129,11 +130,12 @@
           <entry key="class" value="6" />
           <entry key="css" value="7" />
           <entry key="fxml" value="1" />
+          <entry key="gitignore" value="1" />
           <entry key="gradle" value="3" />
           <entry key="groovy" value="2" />
           <entry key="java" value="30" />
-          <entry key="log" value="2" />
-          <entry key="md" value="5" />
+          <entry key="log" value="3" />
+          <entry key="md" value="6" />
           <entry key="properties" value="20" />
           <entry key="xml" value="4" />
         </counts>
@@ -144,7 +146,7 @@
           <entry key="CSS" value="7" />
           <entry key="Groovy" value="5" />
           <entry key="JAVA" value="30" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="Properties" value="20" />
           <entry key="XML" value="5" />
         </counts>
@@ -168,8 +170,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="326" column="40" lean-forward="true" selection-start-line="326" selection-start-column="40" selection-end-line="326" selection-end-column="40" />
+                <state relative-caret-position="420">
+                  <caret line="339" column="60" lean-forward="true" selection-start-line="339" selection-start-column="60" selection-end-line="339" selection-end-column="60" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -177,11 +179,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+                <state relative-caret-position="374">
+                  <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -189,8 +200,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/util/ResizableJavaFXPlayerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="560">
-                  <caret line="40" selection-start-line="40" selection-end-line="40" />
+                <state relative-caret-position="352">
+                  <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -210,7 +221,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/view/MainUI.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
+                <state relative-caret-position="308">
                   <caret line="22" selection-start-line="22" selection-end-line="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -222,9 +233,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/util/Yolo.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="364">
-                  <caret line="26" selection-start-line="26" selection-end-line="26" />
+                <state>
+                  <caret lean-forward="true" />
                   <folding>
+                    <element signature="imports" expanded="true" />
                     <element signature="method#launchMainScene#0;class#Yolo#0" />
                   </folding>
                 </state>
@@ -637,6 +649,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -727,15 +740,9 @@
               <item name="deeplearningui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearningui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deeplearningui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="deeplearningui" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deeplearningui" type="b2602c69:ProjectViewProjectNode" />
@@ -749,7 +756,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541146020243" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541148723342" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1034,7 +1041,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541147248042</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added .gitignore">
+      <created>1541148539955</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1541148539955</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1060,7 +1074,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053364" side_tool="true" weight="0.22150537" />
       <window_info anchor="bottom" id="Run with VisualVM" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32867885" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32795697" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49731663" weight="0.2497332" />
@@ -1124,7 +1138,8 @@
     <MESSAGE value="verify commit" />
     <MESSAGE value="fixed error" />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="added .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .gitignore" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1239,9 +1254,6 @@
           <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dlui.log">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1363,10 +1375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1377,11 +1385,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hs_err_pid14278.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27316" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/hs_err_pid14278.log" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/css/darktheme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
@@ -1391,8 +1395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/util/LocalData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="210">
+          <caret line="15" column="100" lean-forward="true" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
         </state>
       </provider>
     </entry>
@@ -1406,8 +1410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/util/ResizableJavaFXPlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="352">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1423,7 +1427,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/view/MainUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="308">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1433,9 +1437,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/util/Yolo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#launchMainScene#0;class#Yolo#0" />
           </folding>
         </state>
@@ -1450,8 +1455,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="326" column="40" lean-forward="true" selection-start-line="326" selection-start-column="40" selection-end-line="326" selection-end-column="40" />
+        <state relative-caret-position="420">
+          <caret line="339" column="60" lean-forward="true" selection-start-line="339" selection-start-column="60" selection-end-line="339" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1460,8 +1465,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="374">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dlui.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
