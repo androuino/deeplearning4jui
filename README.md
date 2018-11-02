@@ -1,5 +1,5 @@
 # deeplearning4jui
-This is a UI test for trained model in DeepLearning4J Library.
+This is a UI test for trained model using DeepLearning4J Library.
 Some part of my code and images or videos were from this [link](https://github.com/PacktPublishing/Java-Machine-Learning-for-Computer-Vision) so if you want to
 get more knowledge about DeepLearning, you may want to check on this repo.
 
