@@ -316,7 +316,8 @@ public class MainController extends AbstractController {
     private void displayImageToImageView(File file) throws IOException {
         boolean isUserPickedTypeOfSpeed = cbSpeed.getSelectionModel().isEmpty();
         boolean isUserPickedAModel = lblModel.getText().length() > 6;
-        String[] CLASSES = {};
+        String[] CLASSES;
+        model = ModelSerializer.restoreComputationGraph(modelDir);
 
         if (cbClasses.getSelectionModel().getSelectedItem().equals("COCO CLASSES")) {
             CLASSES = COCO_CLASSES;
