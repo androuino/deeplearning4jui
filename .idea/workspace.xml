@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d9dfdc-6b56-439b-bdf4-bf9da092c816" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/sem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/sem.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -109,7 +110,7 @@
           <entry key="gitignore" value="147" />
           <entry key="gradle" value="87" />
           <entry key="java" value="13433" />
-          <entry key="md" value="867" />
+          <entry key="md" value="872" />
           <entry key="properties" value="49" />
           <entry key="txt" value="93" />
           <entry key="xml" value="283" />
@@ -120,7 +121,7 @@
           <entry key="CSS" value="268" />
           <entry key="Groovy" value="87" />
           <entry key="JAVA" value="13433" />
-          <entry key="PLAIN_TEXT" value="1188" />
+          <entry key="PLAIN_TEXT" value="1193" />
           <entry key="Properties" value="49" />
           <entry key="XML" value="322" />
         </counts>
@@ -182,8 +183,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="14">
-                  <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+                <state relative-caret-position="476">
+                  <caret line="34" column="199" selection-start-line="34" selection-start-column="199" selection-end-line="34" selection-end-column="199" />
                 </state>
               </provider>
             </entry>
@@ -693,7 +694,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541152048999" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541152821957" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1020,7 +1021,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541151513679</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="correction">
+      <created>1541152058985</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1541152058985</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1454,8 +1462,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="476">
+          <caret line="34" column="199" selection-start-line="34" selection-start-column="199" selection-end-line="34" selection-end-column="199" />
         </state>
       </provider>
     </entry>

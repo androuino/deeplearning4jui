@@ -32,7 +32,7 @@ This is a step by step process to get this code running:
   compile group: 'uk.co.caprica', name: 'vlcj', version: '3.10.1'
   ```
   
-**Third step.** If `models` directory is not present in `resources`, go ahead and make one then add the `model.zip` file to `home/dir/deeplearningui/resources/models/` that you are going to use for testing.
+**Third step.** If `models` directory is not present in `resources`, go ahead and make one then add the `model.zip` file to `home/dir/deeplearningui/resources/models/` that you are going to use later.
 
 **Fourth step.** Modify the `LocalData.java` and put your customized classes if you have one.
 

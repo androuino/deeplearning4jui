@@ -12,6 +12,7 @@
       <w>ffmpeg</w>
       <w>inferenc</w>
       <w>javacpp</w>
+      <w>libavcodec</w>
       <w>objs</w>
       <w>pretrained</w>
       <w>vlcj</w>
