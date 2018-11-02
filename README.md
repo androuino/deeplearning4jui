@@ -54,7 +54,10 @@ This is a step by step process to get this code running:
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_006.png)
 
 **Useful Links**
+
 [DeepLearning](http://deeplearning4j.org)
+
 [DeepLearning](https://github.com/deeplearning4j/deeplearning4j)
+
 [DeepLearning](https://github.com/deeplearning4j/dl4j-examples)
 
