@@ -1,5 +1,5 @@
 # deeplearning4jui
-This is a UI test for trained model in DeepLearning4J Library.
+This is a UI test for trained model using DeepLearning4J Library.
 Some part of my code and images or videos were from this [link](https://github.com/PacktPublishing/Java-Machine-Learning-for-Computer-Vision) so if you want to
 get more knowledge about DeepLearning, you may want to check on this repo.
 
@@ -9,7 +9,7 @@ Assuming at least Java JDK 1.8 and JavaFX Library are installed already and you 
 ## Prerequisites
 This is a step by step process to get this code running:
 
-**First step.** Install VLC but this is optional if *libavcodec.so* is compatible with the version of Linux or Ubuntu machine and JavaFX Library. If not then go through this steps:
+**First step.** Install VLC but this is optional if the version of *libavcodec.so* you have is compatible with the version of Linux or Ubuntu machine and JavaFX Library isntalled. If not then go through this steps because we're not going to use MediaPlayer from JavaFX Library because I can't get it to work with my Ubuntu version unless it's working for you:
   > sudo aptitude
   
   > then search for vlc and install
@@ -36,7 +36,7 @@ This is a step by step process to get this code running:
 
 **Fourth step.** Modify the `LocalData.java` and put your customized classes if you have one.
 
-## Graphical sample of how to use the program
+## Graphical sample of how to use it
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_001.png)
 
 *You can choose a model from specific directory by clicking the button with folder icon at the left top corner or use the pretrained model from darknet*
