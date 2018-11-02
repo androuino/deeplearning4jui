@@ -36,7 +36,7 @@ This is a step by step process to get this code running:
 
 **Fourth step.** Modify the `LocalData.java` and put your customized classes if you have one.
 
-## Graphical sample of how to use the program
+## Graphical sample of how to use it
 ![DL4JUI](https://github.com/androuino/deeplearning4jui/blob/master/src/main/resources/img/DL4J%20UI%202018_001.png)
 
 *You can choose a model from specific directory by clicking the button with folder icon at the left top corner or use the pretrained model from darknet*
