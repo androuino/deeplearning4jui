@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d9dfdc-6b56-439b-bdf4-bf9da092c816" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/sem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/sem.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -108,9 +110,9 @@
           <entry key="gitignore" value="147" />
           <entry key="gradle" value="87" />
           <entry key="java" value="13433" />
-          <entry key="md" value="724" />
+          <entry key="md" value="811" />
           <entry key="properties" value="49" />
-          <entry key="txt" value="75" />
+          <entry key="txt" value="82" />
           <entry key="xml" value="283" />
         </counts>
       </usages-collector>
@@ -119,7 +121,7 @@
           <entry key="CSS" value="268" />
           <entry key="Groovy" value="87" />
           <entry key="JAVA" value="13433" />
-          <entry key="PLAIN_TEXT" value="1027" />
+          <entry key="PLAIN_TEXT" value="1121" />
           <entry key="Properties" value="49" />
           <entry key="XML" value="322" />
         </counts>
@@ -178,20 +180,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+                <state relative-caret-position="476">
+                  <caret line="34" column="96" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
                 </state>
               </provider>
             </entry>
@@ -647,8 +640,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/css/darktheme.css" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -701,7 +694,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541151067862" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541151288825" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1000,11 +993,19 @@
       <option name="project" value="LOCAL" />
       <updated>1541148898214</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="cleanup">
+      <created>1541151105975</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1541151105975</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16808964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1091,7 +1092,8 @@
     <MESSAGE value="update readme" />
     <MESSAGE value="added .gitignore" />
     <MESSAGE value="Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1415,13 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dlui.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
@@ -1432,7 +1427,14 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <caret column="5" selection-start-column="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="96" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
         </state>
       </provider>
     </entry>
