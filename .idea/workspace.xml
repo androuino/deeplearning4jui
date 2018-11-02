@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67d9dfdc-6b56-439b-bdf4-bf9da092c816" name="Default Changelist" comment="" />
+    <list default="true" id="67d9dfdc-6b56-439b-bdf4-bf9da092c816" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/img/DL4J UI 2018_006.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -103,7 +111,7 @@
           <entry key="css" value="268" />
           <entry key="dummy" value="81" />
           <entry key="fxml" value="39" />
-          <entry key="gitignore" value="8" />
+          <entry key="gitignore" value="30" />
           <entry key="gradle" value="87" />
           <entry key="java" value="13433" />
           <entry key="md" value="724" />
@@ -117,7 +125,7 @@
           <entry key="CSS" value="268" />
           <entry key="Groovy" value="87" />
           <entry key="JAVA" value="13433" />
-          <entry key="PLAIN_TEXT" value="888" />
+          <entry key="PLAIN_TEXT" value="910" />
           <entry key="Properties" value="49" />
           <entry key="XML" value="322" />
         </counts>
@@ -189,7 +197,7 @@
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
-                  <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+                  <caret column="17" selection-start-column="17" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -688,7 +696,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541149387464" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541149413146" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -992,8 +1000,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16808964" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16808964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1002,13 +1011,13 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.22150537" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.22150537" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.33019853" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4994664" weight="0.32903227" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4994664" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053364" side_tool="true" weight="0.22150537" />
       <window_info anchor="bottom" id="Run with VisualVM" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -1419,7 +1428,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
