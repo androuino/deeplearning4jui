@@ -9,7 +9,7 @@ Assuming at least Java JDK 1.8 and JavaFX Library are installed already and you 
 ## Prerequisites
 This is a step by step process to get this code running:
 
-**First step.** Install VLC but this is optional if *libavcodec.so* is compatible with the version of Linux or Ubuntu machine and JavaFX Library. If not then go through this steps:
+**First step.** Install VLC but this is optional if the version of *libavcodec.so* you have is compatible with the version of Linux or Ubuntu machine and JavaFX Library isntalled. If not then go through this steps because we're not going to use MediaPlayer from JavaFX Library because I can't get it to work with my Ubuntu version unless it's working for you:
   > sudo aptitude
   
   > then search for vlc and install
