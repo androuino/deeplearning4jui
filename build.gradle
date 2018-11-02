@@ -1,0 +1,32 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'com.intellisrc'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // dl4j
+    compile group: 'org.nd4j', name: 'nd4j-native-platform', version: '1.0.0-beta2'
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: '1.0.0-beta2'
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-nlp', version: '1.0.0-beta2'
+    compile group: 'org.datavec', name: 'datavec-api', version: '1.0.0-beta2'
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-zoo', version: '1.0.0-beta2'
+    // logs
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+    // bytedeco
+    compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '4.0.2-1.4.3'
+    compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg-platform', version: '4.0.2-1.4.3'
+    // vlcj
+    compile group: 'uk.co.caprica', name: 'vlcj', version: '3.10.1'
+}
