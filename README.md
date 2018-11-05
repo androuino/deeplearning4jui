@@ -4,6 +4,7 @@ Some part of my code and images or videos were from this [link](https://github.c
 get more knowledge about DeepLearning, you may want to check on this repo.
 
 ## GETTING STARTED
+For this project, I have used IntelliJ IDE for faster development.
 Assuming at least Java JDK 1.8 and JavaFX Library are installed already and you cloned or downloaded this repository.
 
 ## Prerequisites

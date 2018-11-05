@@ -232,7 +232,7 @@ public class MainController extends AbstractController {
                                         + File.separator
                                         + "models"
                                         + File.separator
-                                        + "yolo2_dl4j_inference.v3.zip");
+                                        + "tiny-yolo-voc_dl4j_inference.v1.zip");
                                 model = ModelSerializer.restoreComputationGraph(file);
                                 what = 1;
                             } else if (cbModels.getSelectionModel().isSelected(1)) { // pick the default TinyYOLO model
@@ -242,7 +242,7 @@ public class MainController extends AbstractController {
                                         + File.separator
                                         + "models"
                                         + File.separator
-                                        + "tiny-yolo-voc_dl4j_inference.v1.zip");
+                                        + "yolo2_dl4j_inference.v3.zip");
                                 model = ModelSerializer.restoreComputationGraph(file);
                                 what = 2;
                             }
@@ -287,7 +287,7 @@ public class MainController extends AbstractController {
                             + File.separator
                             + "models"
                             + File.separator
-                            + "yolo2_dl4j_inference.v3.zip");
+                            + "tiny-yolo-voc_dl4j_inference.v1.zip");
                     model = ModelSerializer.restoreComputationGraph(fileYolo2);
                     what = 1;
                 } else if (cbModels.getSelectionModel().isSelected(1)) { // pick the default TinyYOLO model
@@ -297,7 +297,7 @@ public class MainController extends AbstractController {
                             + File.separator
                             + "models"
                             + File.separator
-                            + "tiny-yolo-voc_dl4j_inference.v1.zip");
+                            + "yolo2_dl4j_inference.v3.zip");
                     model = ModelSerializer.restoreComputationGraph(fileTiny);
                     what = 2;
                 }
@@ -315,9 +315,9 @@ public class MainController extends AbstractController {
      * @throws IOException
      */
     private void displayImageToImageView(File file) throws IOException {
-        boolean isUserPickedTypeOfSpeed = cbSpeed.getSelectionModel().isEmpty();
         boolean isUserPickedAModel = lblModel.getText().length() > 6;
         String[] CLASSES;
+
         if (isUserPickedAModel) { // if chosen a model trained with custom datasets
             model = ModelSerializer.restoreComputationGraph(modelDir);
         } else if (cbModels.getSelectionModel().isSelected(0)) { // pick the default YOLO2 model
@@ -327,7 +327,7 @@ public class MainController extends AbstractController {
                     + File.separator
                     + "models"
                     + File.separator
-                    + "yolo2_dl4j_inference.v3.zip");
+                    + "tiny-yolo-voc_dl4j_inference.v1.zip");
             model = ModelSerializer.restoreComputationGraph(fileYolo2);
         } else if (cbModels.getSelectionModel().isSelected(1)) { // pick the default TinyYOLO model
             File fileTiny = new File(System.getProperty("user.dir")
@@ -336,7 +336,7 @@ public class MainController extends AbstractController {
                     + File.separator
                     + "models"
                     + File.separator
-                    + "tiny-yolo-voc_dl4j_inference.v1.zip");
+                    + "yolo2_dl4j_inference.v3.zip");
             model = ModelSerializer.restoreComputationGraph(fileTiny);
         }
 
@@ -347,20 +347,16 @@ public class MainController extends AbstractController {
         } else {
             CLASSES = CUSTOMIZE_CLASSES;
         }
-        if (isUserPickedAModel && !isUserPickedTypeOfSpeed) {
+
+        if (isUserPickedAModel) {
             beginDetection(cbSpeed.getSelectionModel().getSelectedItem(), file, CLASSES);
             lblModel.setStyle("-fx-background-color: #395B5D22;");
         } else {
             imgvwMain.setImage(new Image(new FileInputStream(file)));
             if (!isUserPickedAModel)
                 lblModel.setStyle("-fx-background-color: red;");
+            beginDetection(cbSpeed.getSelectionModel().getSelectedItem(), file, CLASSES);
             addToLogs("No Model Selected");
-        }
-        if (isUserPickedTypeOfSpeed) {
-            addToLogs("Speed not Selected");
-            lblSpeed.setStyle("-fx-background-color: red;");
-        } else {
-            lblSpeed.setStyle("-fx-background-color: #395B5D22;");
         }
     }
 
