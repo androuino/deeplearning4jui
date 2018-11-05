@@ -185,6 +185,7 @@ public class MainController extends AbstractController {
                     if (!navDir.getName().equals("")) {
                         modelDir = navDir.getAbsolutePath();
                         //model = ModelSerializer.restoreComputationGraph(modelDir);
+                        lblModel.setText(lblModel.getText());
                         lblModel.setText(lblModel.getText() + " " + navDir.getName());
                         lblModel.setStyle("-fx-background-color: #395B5D22;");
                     } else {
