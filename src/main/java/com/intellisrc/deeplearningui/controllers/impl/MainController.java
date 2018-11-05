@@ -160,8 +160,8 @@ public class MainController extends AbstractController {
         cbModels.getItems().add("YOLO2");
         cbModels.getSelectionModel().select(0);
 
-        cbClasses.getItems().add("COCO CLASSES");
         cbClasses.getItems().add("TINY COCO CLASSES");
+        cbClasses.getItems().add("COCO CLASSES");
         cbClasses.getItems().add("CUSTOMIZE CLASSES");
         cbClasses.getSelectionModel().select(0);
 
@@ -225,27 +225,38 @@ public class MainController extends AbstractController {
                             addToLogs(cbSpeed.getSelectionModel().getSelectedItem().toString());
                             if (isModelSelected) { // if chosen a model trained with custom datasets
                                 model = ModelSerializer.restoreComputationGraph(modelDir);
-                            } else if (cbModels.getSelectionModel().isSelected(0)) { // pick the default YOLO2 model
-                                File file = new File(System.getProperty("user.dir")
-                                        + File.separator
-                                        + "resources"
-                                        + File.separator
-                                        + "models"
-                                        + File.separator
-                                        + "tiny-yolo-voc_dl4j_inference.v1.zip");
-                                model = ModelSerializer.restoreComputationGraph(file);
-                                what = 1;
-                            } else if (cbModels.getSelectionModel().isSelected(1)) { // pick the default TinyYOLO model
-                                File file = new File(System.getProperty("user.dir")
-                                        + File.separator
-                                        + "resources"
-                                        + File.separator
-                                        + "models"
-                                        + File.separator
-                                        + "yolo2_dl4j_inference.v3.zip");
-                                model = ModelSerializer.restoreComputationGraph(file);
                                 what = 2;
+                            } else {
+                                if (cbModels.getSelectionModel().isSelected(0)) { // pick the default YOLO2 model
+                                    File file = new File(System.getProperty("user.dir")
+                                            + File.separator
+                                            + "resources"
+                                            + File.separator
+                                            + "models"
+                                            + File.separator
+                                            + "tiny-yolo-voc_dl4j_inference.v1.zip");
+                                    model = ModelSerializer.restoreComputationGraph(file);
+                                    what = 0;
+                                } else if (cbModels.getSelectionModel().isSelected(1)) { // pick the default TinyYOLO model
+                                    File file = new File(System.getProperty("user.dir")
+                                            + File.separator
+                                            + "resources"
+                                            + File.separator
+                                            + "models"
+                                            + File.separator
+                                            + "yolo2_dl4j_inference.v3.zip");
+                                    model = ModelSerializer.restoreComputationGraph(file);
+                                    what = 1;
+                                }
                             }
+                            int finalWhat = what;
+                            /*Executors.newSingleThreadExecutor().submit(() -> {
+                                try {
+                                    startRealTimeVideoDetection(vidFile.getAbsolutePath(), cbSpeed.getSelectionModel().getSelectedItem(), model, finalWhat);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            });*/
                             startRealTimeVideoDetection(vidFile.getAbsolutePath(), cbSpeed.getSelectionModel().getSelectedItem(), model, what);
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -280,28 +291,31 @@ public class MainController extends AbstractController {
             try {
                 if (isModelSelected) { // if chosen a model trained with custom datasets
                     model = ModelSerializer.restoreComputationGraph(modelDir);
-                } else if (cbModels.getSelectionModel().isSelected(0)) { // pick the default YOLO2 model
-                    File fileYolo2 = new File(System.getProperty("user.dir")
-                            + File.separator
-                            + "resources"
-                            + File.separator
-                            + "models"
-                            + File.separator
-                            + "tiny-yolo-voc_dl4j_inference.v1.zip");
-                    model = ModelSerializer.restoreComputationGraph(fileYolo2);
-                    what = 1;
-                } else if (cbModels.getSelectionModel().isSelected(1)) { // pick the default TinyYOLO model
-                    File fileTiny = new File(System.getProperty("user.dir")
-                            + File.separator
-                            + "resources"
-                            + File.separator
-                            + "models"
-                            + File.separator
-                            + "yolo2_dl4j_inference.v3.zip");
-                    model = ModelSerializer.restoreComputationGraph(fileTiny);
                     what = 2;
+                } else {
+                    if (cbModels.getSelectionModel().isSelected(0)) { // pick the default YOLO2 model
+                        File fileTiny = new File(System.getProperty("user.dir")
+                                + File.separator
+                                + "resources"
+                                + File.separator
+                                + "models"
+                                + File.separator
+                                + "tiny-yolo-voc_dl4j_inference.v1.zip");
+                        model = ModelSerializer.restoreComputationGraph(fileTiny);
+                        what = 0;
+                    } else if (cbModels.getSelectionModel().isSelected(1)) { // pick the default TinyYOLO model
+                        File fileYolo2 = new File(System.getProperty("user.dir")
+                                + File.separator
+                                + "resources"
+                                + File.separator
+                                + "models"
+                                + File.separator
+                                + "yolo2_dl4j_inference.v3.zip");
+                        model = ModelSerializer.restoreComputationGraph(fileYolo2);
+                        what = 1;
+                    }
                 }
-                startRealTimeVideoDetection(listOfVideos.get(selectedIndex).getAbsolutePath(), cbSpeed.getSelectionModel().getSelectedItem(), model, 1);
+                startRealTimeVideoDetection(listOfVideos.get(selectedIndex).getAbsolutePath(), cbSpeed.getSelectionModel().getSelectedItem(), model, what);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -586,7 +600,7 @@ public class MainController extends AbstractController {
 
     public void startRealTimeVideoDetection(String videoFileName, Speed selectedIndex, ComputationGraph yoloModel, int what) throws java.lang.Exception {
         log.info("Start detecting video " + videoFileName);
-        addToLogs("Start detecting video " + videoFileName);
+        Platform.runLater(() -> addToLogs("Start detecting video " + videoFileName) );
         stop = false;
         yolo = new Yolo(selectedIndex, yoloModel, what);
         startYoloThread();
@@ -594,6 +608,7 @@ public class MainController extends AbstractController {
     }
 
     private void runVideoMainThread(String videoFileName, OpenCVFrameConverter.ToMat toMat) throws FrameGrabber.Exception {
+        Platform.setImplicitExit(false);
         FFmpegFrameGrabber grabber = initFrameGrabber(videoFileName);
         while (!stop) {
             Frame frame = grabber.grab();
@@ -615,6 +630,7 @@ public class MainController extends AbstractController {
             // Exit this loop on escape:
             if (key == 27) {
                 stop();
+                grabber.stop();
                 break;
             }
         }

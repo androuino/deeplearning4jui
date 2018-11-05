@@ -52,13 +52,13 @@ public class Yolo implements ViewHandler {
         switch (what) {
             case 0:
                 //prepareCustomizeYoloLabels();
-                prepareLabels(CUSTOMIZE_CLASSES);
+                prepareTinyYOLOLabels();
                 break;
             case 1:
                 prepareYOLOLabels();
                 break;
             case 2:
-                prepareTinyYOLOLabels();
+                prepareLabels(CUSTOMIZE_CLASSES);
                 break;
         }
         model = yolo;
