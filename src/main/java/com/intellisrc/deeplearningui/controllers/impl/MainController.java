@@ -318,7 +318,27 @@ public class MainController extends AbstractController {
         boolean isUserPickedTypeOfSpeed = cbSpeed.getSelectionModel().isEmpty();
         boolean isUserPickedAModel = lblModel.getText().length() > 6;
         String[] CLASSES;
-        model = ModelSerializer.restoreComputationGraph(modelDir);
+        if (isUserPickedAModel) { // if chosen a model trained with custom datasets
+            model = ModelSerializer.restoreComputationGraph(modelDir);
+        } else if (cbModels.getSelectionModel().isSelected(0)) { // pick the default YOLO2 model
+            File fileYolo2 = new File(System.getProperty("user.dir")
+                    + File.separator
+                    + "resources"
+                    + File.separator
+                    + "models"
+                    + File.separator
+                    + "yolo2_dl4j_inference.v3.zip");
+            model = ModelSerializer.restoreComputationGraph(fileYolo2);
+        } else if (cbModels.getSelectionModel().isSelected(1)) { // pick the default TinyYOLO model
+            File fileTiny = new File(System.getProperty("user.dir")
+                    + File.separator
+                    + "resources"
+                    + File.separator
+                    + "models"
+                    + File.separator
+                    + "tiny-yolo-voc_dl4j_inference.v1.zip");
+            model = ModelSerializer.restoreComputationGraph(fileTiny);
+        }
 
         if (cbClasses.getSelectionModel().getSelectedItem().equals("COCO CLASSES")) {
             CLASSES = COCO_CLASSES;
