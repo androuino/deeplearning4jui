@@ -25,7 +25,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Screen;
-import org.bytedeco.javacpp.opencv_core;
+import org.bytedeco.javacpp.opencv_core.*;
 import org.bytedeco.javacv.FFmpegFrameGrabber;
 import org.bytedeco.javacv.Frame;
 import org.bytedeco.javacv.FrameGrabber;
@@ -47,6 +47,8 @@ import uk.co.caprica.vlcj.player.direct.format.RV32BufferFormat;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
+import java.awt.image.DataBufferByte;
+import java.awt.image.WritableRaster;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -66,7 +68,6 @@ import static com.intellisrc.deeplearningui.util.LocalData.COCO_CLASSES;
 import static com.intellisrc.deeplearningui.util.LocalData.CUSTOMIZE_CLASSES;
 import static com.intellisrc.deeplearningui.util.LocalData.TINY_COCO_CLASSES;
 import static org.bytedeco.javacpp.opencv_core.*;
-import static org.bytedeco.javacpp.opencv_highgui.imshow;
 import static org.bytedeco.javacpp.opencv_highgui.waitKey;
 import static org.bytedeco.javacpp.opencv_imgproc.*;
 
@@ -104,9 +105,9 @@ public class MainController extends AbstractController {
     private ListView lvVideoList;
 
     // javafx
-    private Group group = new Group();
     private Pane imgvwPane;
     private FileChooser fileChooser;
+    private Group group = new Group();
     private DirectoryChooser directoryChooser;
     // dl4j
     private ComputationGraph model;
@@ -416,7 +417,7 @@ public class MainController extends AbstractController {
             putText(image, label + " : " + confidence + "%", new Point(x1 + 2, y2 - 2), FONT_HERSHEY_DUPLEX, 1, Scalar.GREEN);
             addToLogs("predictedClass=" + obj.getPredictedClass());
         }
-        BufferedImage bi = toImage(image);
+        BufferedImage bi = matToImage(image);
         imgvwMain.setImage(SwingFXUtils.toFXImage(bi, null));
     }
 
@@ -426,7 +427,7 @@ public class MainController extends AbstractController {
      * @param mat Mat of type CV_8UC3 or CV_8UC1
      * @return BufferedImage of type TYPE_3BYTE_BGR or TYPE_BYTE_GRAY
      */
-    private BufferedImage toImage(Mat mat) {
+    private static BufferedImage matToImage(Mat mat) {
         if ( mat != null ) {
             int columns = mat.cols();
             int rows = mat.rows();
@@ -622,10 +623,12 @@ public class MainController extends AbstractController {
                 continue;
             }
             yolo.push(frame);
-            opencv_core.Mat mat = toMat.convert(frame);
+            Mat mat = toMat.convert(frame);
             yolo.drawBoundingBoxesRectangles(frame, mat);
-            BufferedImage bi = toImage(mat);
-            imgvwMain.setImage(SwingFXUtils.toFXImage(bi, null));
+            BufferedImage bi = matToImage(mat);
+            Image image = SwingFXUtils.toFXImage(bi, null);
+            imgvwMain.setImage(image);
+
             char key = (char) waitKey(20);
             // Exit this loop on escape:
             if (key == 27) {

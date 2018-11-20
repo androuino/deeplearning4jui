@@ -1,7 +1,6 @@
 package com.intellisrc.deeplearningui.util;
 
 import com.intellisrc.deeplearningui.handler.ViewHandler;
-import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacv.Frame;
 import org.bytedeco.javacv.Java2DFrameConverter;
 import org.datavec.image.loader.NativeImageLoader;
@@ -27,6 +26,7 @@ import static com.intellisrc.deeplearningui.util.LocalData.COCO_CLASSES;
 import static com.intellisrc.deeplearningui.util.LocalData.CUSTOMIZE_CLASSES;
 import static com.intellisrc.deeplearningui.util.LocalData.TINY_COCO_CLASSES;
 import static org.bytedeco.javacpp.opencv_core.FONT_HERSHEY_DUPLEX;
+import org.bytedeco.javacpp.opencv_core.*;
 import static org.bytedeco.javacpp.opencv_imgproc.putText;
 import static org.bytedeco.javacpp.opencv_imgproc.rectangle;
 
@@ -65,10 +65,6 @@ public class Yolo implements ViewHandler {
         warmUp(selectedSpeed);
     }
 
-    public void push(Frame matFrame) {
-        stack.push(matFrame);
-    }
-
     private void warmUp(Speed selectedSpeed) throws IOException {
         Yolo2OutputLayer outputLayer = (Yolo2OutputLayer) model.getOutputLayer(0);
         BufferedImage read = ImageIO.read(new File(System.getProperty("user.dir")
@@ -83,8 +79,12 @@ public class Yolo implements ViewHandler {
                 + File.separator
                 + "sample.jpg"));
         INDArray indArray = prepareImage(read, selectedSpeed.width, selectedSpeed.height);
-        INDArray results = model.outputSingle(indArray);
-        outputLayer.getPredictedObjects(results, DETECTION_THRESHOLD);
+        INDArray indArrayResults = model.outputSingle(indArray);
+        outputLayer.getPredictedObjects(indArrayResults, DETECTION_THRESHOLD);
+    }
+
+    public void push(Frame matFrame) {
+        stack.push(matFrame);
     }
 
     private INDArray prepareImage(Frame frame, int width, int height) throws IOException {
@@ -135,7 +135,7 @@ public class Yolo implements ViewHandler {
         }
     }
 
-    public void drawBoundingBoxesRectangles(Frame frame, opencv_core.Mat matFrame) {
+    public void drawBoundingBoxesRectangles(Frame frame, Mat matFrame) {
         if (invalidData(frame, matFrame)) return;
 
         ArrayList<DetectedObject> detectedObjects = new ArrayList<>(predictedObjects);
@@ -146,7 +146,7 @@ public class Yolo implements ViewHandler {
 
     }
 
-    private boolean invalidData(Frame frame, opencv_core.Mat matFrame) {
+    private boolean invalidData(Frame frame, Mat matFrame) {
         return predictedObjects == null || matFrame == null || frame == null;
     }
 
@@ -160,11 +160,11 @@ public class Yolo implements ViewHandler {
             return;
         }
 
-        INDArray results = model.outputSingle(indArray);
-        if (results == null) {
+        INDArray indArrayResults = model.outputSingle(indArray);
+        if (indArrayResults == null) {
             return;
         }
-        predictedObjects = outputLayer.getPredictedObjects(results, DETECTION_THRESHOLD);
+        predictedObjects = outputLayer.getPredictedObjects(indArrayResults, DETECTION_THRESHOLD);
 
         log.info("stack of predictions size " + predictedObjects.size());
         logsBus("stack of predictions size " + predictedObjects.size());
@@ -172,7 +172,7 @@ public class Yolo implements ViewHandler {
         logsBus("Prediction time " + (System.currentTimeMillis() - start) / 1000d);
     }
 
-    private void createBoundingBoxRectangle(opencv_core.Mat file, int w, int h, DetectedObject obj) {
+    private void createBoundingBoxRectangle(Mat file, int w, int h, DetectedObject obj) {
         double[] xy1 = obj.getTopLeftXY();
         double[] xy2 = obj.getBottomRightXY();
         int predictedClass = obj.getPredictedClass();
@@ -180,8 +180,8 @@ public class Yolo implements ViewHandler {
         int y1 = (int) Math.round(h * xy1[1] / selectedSpeed.gridHeight);
         int x2 = (int) Math.round(w * xy2[0] / selectedSpeed.gridWidth);
         int y2 = (int) Math.round(h * xy2[1] / selectedSpeed.gridHeight);
-        rectangle(file, new opencv_core.Point(x1, y1), new opencv_core.Point(x2, y2), opencv_core.Scalar.RED);
-        putText(file, groupMap.get(map.get(predictedClass)), new opencv_core.Point(x1 + 2, y2 - 2), FONT_HERSHEY_DUPLEX, 0.5, opencv_core.Scalar.GREEN);
+        rectangle(file, new Point(x1, y1), new Point(x2, y2), Scalar.RED);
+        putText(file, groupMap.get(map.get(predictedClass)), new Point(x1 + 2, y2 - 2), FONT_HERSHEY_DUPLEX, 0.5, Scalar.GREEN);
     }
 
     @Override
