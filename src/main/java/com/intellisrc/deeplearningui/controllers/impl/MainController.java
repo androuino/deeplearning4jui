@@ -62,12 +62,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static com.intellisrc.deeplearningui.util.LocalData.COCO_CLASSES;
 import static com.intellisrc.deeplearningui.util.LocalData.CUSTOMIZE_CLASSES;
 import static com.intellisrc.deeplearningui.util.LocalData.TINY_COCO_CLASSES;
 import static org.bytedeco.javacpp.opencv_core.*;
+import static org.bytedeco.javacpp.opencv_highgui.imshow;
 import static org.bytedeco.javacpp.opencv_highgui.waitKey;
 import static org.bytedeco.javacpp.opencv_imgproc.*;
 
@@ -611,31 +613,34 @@ public class MainController extends AbstractController {
     private void runVideoMainThread(String videoFileName, OpenCVFrameConverter.ToMat toMat) throws FrameGrabber.Exception {
         Platform.setImplicitExit(false);
         FFmpegFrameGrabber grabber = initFrameGrabber(videoFileName);
-        while (!stop) {
-            Frame frame = grabber.grab();
-            if (frame == null) {
-                log.info("Stopping");
-                addToLogs("Stopping");
-                stop();
-                break;
-            }
-            if (frame.image == null) {
-                continue;
-            }
-            yolo.push(frame);
-            Mat mat = toMat.convert(frame);
-            yolo.drawBoundingBoxesRectangles(frame, mat);
-            BufferedImage bi = matToImage(mat);
-            Image image = SwingFXUtils.toFXImage(bi, null);
-            imgvwMain.setImage(image);
+        try {
+            while (!stop) {
+                Frame frame = grabber.grab();
+                if (frame == null) {
+                    log.info("Stopping");
+                    addToLogs("Stopping");
+                    stop(grabber);
+                    break;
+                }
+                if (frame.image == null) {
+                    continue;
+                }
+                yolo.push(frame);
+                Mat mat = toMat.convert(frame);
+                yolo.drawBoundingBoxesRectangles(frame, mat);
+                BufferedImage bi = matToImage(mat);
+                Image image = SwingFXUtils.toFXImage(bi, null);
+                imgvwMain.setImage(image);
 
-            char key = (char) waitKey(20);
-            // Exit this loop on escape:
-            if (key == 27) {
-                stop();
-                grabber.stop();
-                break;
+                char key = (char) waitKey(20);
+                // Exit this loop on escape:
+                if (key == 27) {
+                    stop(grabber);
+                    break;
+                }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -665,9 +670,14 @@ public class MainController extends AbstractController {
         thread.start();
     }
 
-    public void stop() {
+    public void stop(FFmpegFrameGrabber grabber) {
         if (!stop) {
             stop = true;
+            try {
+                grabber.stop();
+            } catch (FrameGrabber.Exception e) {
+                e.printStackTrace();
+            }
             //destroyAllWindows();
         }
     }
