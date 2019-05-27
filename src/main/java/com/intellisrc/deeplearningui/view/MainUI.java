@@ -1,6 +1,5 @@
 package com.intellisrc.deeplearningui.view;
 
-import com.intellisrc.deeplearningui.controllers.impl.MainController;
 import com.intellisrc.deeplearningui.handler.AppViewHandler;
 import javafx.application.Application;
 import javafx.scene.image.Image;

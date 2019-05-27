@@ -1,13 +1,11 @@
 package com.intellisrc.deeplearningui.handler;
 
-import com.intellisrc.deeplearningui.controllers.impl.MainController;
 import com.intellisrc.deeplearningui.view.AbstractWindow;
 import com.intellisrc.deeplearningui.view.window.WindowFactory;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ResourceBundle;
 

@@ -1,6 +1,23 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:4.+'
+        classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.4'
+    }
+}
+
 plugins {
     id 'groovy'
     id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+javafx {
+    version = "11.0.2"// JavaFX
+    modules = [ 'javafx.controls', 'javafx.swing', 'javafx.fxml' ]
 }
 
 group 'com.intellisrc'

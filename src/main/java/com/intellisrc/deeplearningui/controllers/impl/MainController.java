@@ -62,14 +62,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
-import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static com.intellisrc.deeplearningui.util.LocalData.COCO_CLASSES;
 import static com.intellisrc.deeplearningui.util.LocalData.CUSTOMIZE_CLASSES;
 import static com.intellisrc.deeplearningui.util.LocalData.TINY_COCO_CLASSES;
 import static org.bytedeco.javacpp.opencv_core.*;
-import static org.bytedeco.javacpp.opencv_highgui.imshow;
 import static org.bytedeco.javacpp.opencv_highgui.waitKey;
 import static org.bytedeco.javacpp.opencv_imgproc.*;
 
