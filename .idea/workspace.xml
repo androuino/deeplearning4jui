@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d9dfdc-6b56-439b-bdf4-bf9da092c816" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/sem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/sem.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/controllers/AbstractController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/controllers/AbstractController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/controllers/impl/MainController$CanvasBufferFormatCallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/controllers/impl/MainController$CanvasBufferFormatCallback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/controllers/impl/MainController$CanvasPlayerComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/controllers/impl/MainController$CanvasPlayerComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/controllers/impl/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/controllers/impl/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/handler/AppViewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/handler/AppViewHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/util/ResizableJavaFXPlayerTest$CanvasPlayerComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/util/ResizableJavaFXPlayerTest$CanvasPlayerComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/util/VideoPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/util/VideoPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/util/Yolo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/util/Yolo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/view/MainUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/view/MainUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/view/window/WindowFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/view/window/WindowFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/view/window/WindowFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/intellisrc/deeplearningui/view/window/WindowFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/AbstractController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/AbstractController.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/handler/AppViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/handler/AppViewHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/view/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/view/MainUI.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -75,19 +55,19 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="14" column="174" selection-start-line="14" selection-start-column="174" selection-end-line="14" selection-end-column="174" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="29" column="75" selection-start-line="29" selection-start-column="75" selection-end-line="29" selection-end-column="75" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9016">
-              <caret line="646" column="16" selection-start-line="646" selection-start-column="16" selection-end-line="646" selection-end-column="16" />
+            <state relative-caret-position="351">
+              <caret line="223" selection-start-line="223" selection-end-line="223" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,10 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/util/VideoPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="393">
+              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -113,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/Run.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -242,8 +222,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/handler/AppViewHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/AbstractController.groovy" />
         <option value="$PROJECT_DIR$/src/main/resources/bundle/configSrc.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java" />
       </list>
     </option>
   </component>
@@ -299,7 +279,11 @@
             </path>
             <path>
               <item name="deeplearningui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="deeplearningui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -620,14 +604,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544088250535</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="bump JDK11 and JavaFX11">
+      <created>1558948992224</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1558948992224</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="26" width="1930" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2529349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2529349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -657,7 +648,7 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Flutter Outline" order="6" weight="0.32977587" />
       <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.49910554" weight="0.32977587" />
-      <window_info active="true" anchor="right" id="Gradle" order="8" sideWeight="0.49910554" visible="true" weight="0.1072572" />
+      <window_info anchor="right" id="Gradle" order="8" sideWeight="0.49910554" visible="true" weight="0.1072572" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Coverage" order="11" sideWeight="0.5008944" side_tool="true" weight="0.32977587" />
@@ -721,7 +712,8 @@
     <MESSAGE value="I could not fix the speed of video playback and it's something related to JavaFX." />
     <MESSAGE value="updated gradle" />
     <MESSAGE value="added missing file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added missing file" />
+    <MESSAGE value="bump JDK11 and JavaFX11" />
+    <option name="LAST_COMMIT_MESSAGE" value="bump JDK11 and JavaFX11" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -780,13 +772,6 @@
       <provider editor-type-id="ResourceBundle" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.4.2-1.4.2/721b935aa0eb8955d35704d13bdd01bea9e13df1/opencv-3.4.2-1.4.2-sources.jar!/org/bytedeco/javacpp/opencv_highgui.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/util/VideoPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/util/CanvasPlayerComponent.java" />
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/beans/property/SimpleFloatProperty.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -974,24 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="174" selection-start-line="14" selection-start-column="174" selection-end-line="14" selection-end-column="174" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9016">
-          <caret line="646" column="16" selection-start-line="646" selection-start-column="16" selection-end-line="646" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1037,6 +1004,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/Run.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -1044,10 +1021,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/Run.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="29" column="75" selection-start-line="29" selection-start-column="75" selection-end-line="29" selection-end-column="75" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/util/VideoPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="393">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/intellisrc/deeplearningui/controllers/impl/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="223" selection-start-line="223" selection-end-line="223" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

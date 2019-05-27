@@ -221,7 +221,6 @@ public class MainController extends AbstractController {
                 } else {
                     lblModel.setText(lblModel.getText());
                     if (!vidFile.getName().equals("")) {
-                        videoPlayer = new VideoPlayer();
                         try {
                             addToLogs(cbSpeed.getSelectionModel().getSelectedItem().toString());
                             if (isModelSelected) { // if chosen a model trained with custom datasets
